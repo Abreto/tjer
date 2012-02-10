@@ -3,9 +3,9 @@ CC=gcc
 OBJECTS=main.o
 PREFIX=bin/
 
-all: tjer
+all: $(PREFIX)tjer
 
-tjer: $(OBJECTS)
+$(PREFIX)tjer: $(OBJECTS)
 	$(CC) $(OBJECTS) -o $(PREFIX)tjer
 
 main.o: main.c
